@@ -1,0 +1,14 @@
+// 复用flex 变量：默认值
+@mixin flex($row:space-between,$col:center) {
+  display: flex;
+  justify-content: $row;
+  align-items: $col;
+}
+
+@mixin bgImg($w:0,$h:0,$url:'',$size:contain) {
+  display: inline-block;
+  width: $w;
+  height: $h;
+  background: url($url) no-repeat center;
+  background-size: $size;
+}
