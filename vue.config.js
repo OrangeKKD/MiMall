@@ -1,6 +1,7 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
+  // publicPath: '',
   devServer: {
     proxy: {
       // 添加接口代理
